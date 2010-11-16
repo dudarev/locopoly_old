@@ -35,7 +35,7 @@
                 </div>
                 <div class="yui-b">
                     <ul class="menu">
-                        <li{% if section == 'home' %} class="active"{% endif %}><a href="{{ url_for('home') }}">Home</a></li>
+                        <li{% if section == 'home' %} class="active"{% endif %}><a href="{{ url_for('auth/home') }}">Home</a></li>
                         <li{% if section == 'content' %} class="active"{% endif %}><a href="{{ url_for('content/index') }}">Protected Content</a></li>
                     </ul>
                 </div>

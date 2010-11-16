@@ -15,10 +15,11 @@ config['tipfy'] = {
     # Enable debugger. It will be loaded only in development.
     'middleware': [
         'tipfy.ext.debugger.DebuggerMiddleware',
+        'tipfy.ext.i18n.I18nMiddleware',
     ],
     # Enable the Hello, World! app example.
     'apps_installed': [
-        'apps.blog',
+        'apps.locopoly',
         'apps.multi-auth',
     ],
 }

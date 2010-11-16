@@ -21,7 +21,7 @@ def get_rules(app):
         A list of class:`tipfy.Rule` instances.
     """
     rules = [
-        Rule('/', endpoint='home', handler='apps.multi-auth.handlers.HomeHandler'),
+        Rule('/auth/home', endpoint='auth/home', handler='apps.multi-auth.handlers.HomeHandler'),
         Rule('/auth/login', endpoint='auth/login', handler='apps.multi-auth.handlers.LoginHandler'),
         Rule('/auth/logout', endpoint='auth/logout', handler='apps.multi-auth.handlers.LogoutHandler'),
         Rule('/auth/signup', endpoint='auth/signup', handler='apps.multi-auth.handlers.SignupHandler'),
