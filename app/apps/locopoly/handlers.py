@@ -18,12 +18,18 @@ class IndexHandler(RequestHandler, MultiAuthMixin, Jinja2Mixin,
         if 'id' in self.auth_session:
             auth_session = self.auth_session
 
+        ctx = self.request.context
+        locale = ctx.get('locale', None)
+        if not locale:
+            locale = 'en'
+
         self.request.context.update({
             'auth_session': auth_session,
             'current_user': self.auth_current_user,
             'login_url':    self.auth_login_url(),
             'logout_url':   self.auth_logout_url(),
             'current_url':  self.request.url,
+            'locale': locale,
         })
 
         return super(IndexHandler, self).render_response(filename, **kwargs)
