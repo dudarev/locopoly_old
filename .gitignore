@@ -2,3 +2,4 @@
 *.pyc
 app/distlib/*
 .installed.cfg
+app/config.py
