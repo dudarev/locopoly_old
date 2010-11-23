@@ -28,13 +28,19 @@
         <p>{% if current_user or auth_session -%}
             {% if current_user -%}
                 Signed in as <span class="user_email">{{ current_user.username|e }}</span> |
-            {%- endif %} <a href="{{ logout_url }}">Sign out</a>
+                {%- endif %} <a href="{{ logout_url }}">Sign out</a>
+                <br/>
+                Please help to spread Locopoly.<br/>
+                "I want to play http://www.locopoly.com"<br/>
+                <input type="submit" name="submit" value="Tweet it!">
         {% else %}
+            <p> Locopoly is by invitations only. To join the waiting list
             {% if debug -%}
-            Hi, there. <a href="/auth/login?continue=%2F">Sign in</a>
+            <a href="/auth/login?continue=%2F">sign in with Twitter</a>
             {% else %}
-            Hi, there. <a href="/auth/twitter/?continue=%2F">Sign in</a>
+            <a href="/auth/twitter/?continue=%2F">sign in with Twitter</a>
             {%- endif %}
+            .
         {%- endif %}</p>
     </div>
 
