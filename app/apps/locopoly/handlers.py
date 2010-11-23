@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+import os
+
 from tipfy import RequestHandler, cached_property, redirect
 from tipfy.ext.jinja2 import render_response
 from models import Post
@@ -8,6 +10,8 @@ from tipfy.ext.auth import MultiAuthMixin, login_required, user_required
 from tipfy.ext.session import AllSessionMixins, SessionMiddleware
 from tipfy.ext.jinja2 import Jinja2Mixin
 
+# Is this the development server?
+debug = os.environ.get('SERVER_SOFTWARE', '').startswith('Dev')
 
 class IndexHandler(RequestHandler, MultiAuthMixin, Jinja2Mixin,
         AllSessionMixins):
@@ -30,6 +34,7 @@ class IndexHandler(RequestHandler, MultiAuthMixin, Jinja2Mixin,
             'logout_url':   self.auth_logout_url(),
             'current_url':  self.request.url,
             'locale': locale,
+            'debug': debug,
         })
 
         return super(IndexHandler, self).render_response(filename, **kwargs)

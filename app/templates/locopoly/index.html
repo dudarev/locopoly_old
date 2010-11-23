@@ -30,8 +30,12 @@
                 Signed in as <span class="user_email">{{ current_user.username|e }}</span> |
             {%- endif %} <a href="{{ logout_url }}">Sign out</a>
         {% else %}
+            {% if debug -%}
+            Hi, there. <a href="/auth/login?continue=%2F">Sign in</a>
+            {% else %}
             Hi, there. <a href="/auth/twitter/?continue=%2F">Sign in</a>
-            {% endif %}</p>
+            {%- endif %}
+        {%- endif %}</p>
     </div>
 
 </body>
