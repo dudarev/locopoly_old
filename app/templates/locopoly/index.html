@@ -24,5 +24,15 @@
         </div> 
     </div>
 
+    <div id="user-status">
+        <p>{% if current_user or auth_session -%}
+            {% if current_user -%}
+                Signed in as <span class="user_email">{{ current_user.username|e }}</span> |
+            {%- endif %} <a href="{{ logout_url }}">Sign out</a>
+        {% else %}
+            Hi, there. <a href="/auth/twitter/?continue=%2F">Sign in</a>
+            {% endif %}</p>
+    </div>
+
 </body>
 </html>

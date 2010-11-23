@@ -11,6 +11,7 @@ from tipfy.ext.jinja2 import Jinja2Mixin
 from tipfy.ext.session import AllSessionMixins, SessionMiddleware
 from tipfy.ext.wtforms import Form, fields, validators
 
+import logging
 
 REQUIRED = validators.required()
 
@@ -72,7 +73,11 @@ class BaseHandler(RequestHandler, MultiAuthMixin, Jinja2Mixin,
             url = '/'
 
         if not self.auth_current_user:
-            url = self.auth_signup_url()
+            auth_id = self.auth_session.get('id')
+            user_nickname = auth_id.split('|')[1]
+            user = self.auth_create_user(user_nickname, auth_id)
+            self.auth_set_session(user.auth_id, user.session_id, '1')
+            # url = self.auth_signup_url()
 
         return redirect(url)
 
@@ -290,6 +295,7 @@ class FriendFeedAuthHandler(BaseHandler, FriendFeedMixin):
 
 class TwitterAuthHandler(BaseHandler, TwitterMixin):
     def get(self):
+
         url = self.redirect_path()
 
         if 'id' in self.auth_session:
