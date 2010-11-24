@@ -3,3 +3,4 @@
 app/distlib/*
 .installed.cfg
 app/config.py
+mockup/.sass-cache/*

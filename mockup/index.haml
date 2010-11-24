@@ -1,0 +1,28 @@
+!!!
+%html{ :lang => "en" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %title
+      Blueprint test pages
+    /
+      Framework CSS
+    %link{ :href => "static/styles/screen.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
+    %link{ :href => "static/styles/print.css", :rel => "stylesheet", :media => "print", :type => "text/css" }
+    /
+      [if IE]><link rel="stylesheet" href="static/styles/ie.css" type="text/css" media="screen, projection"><![endif]
+  %body
+    #layout
+      #header
+        %h1 Sticky Footer Example
+
+      %p
+        This is the main content area.
+      %p
+        In this example you should pretend that the red box
+        is actually the browser window.
+      %p
+        Because, being a contrived example, it's not actually sticking
+        to the bottom of the page.
+      #layout_footer
+    #footer
+      This is the footer area.
