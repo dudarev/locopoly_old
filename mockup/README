@@ -4,3 +4,7 @@ To start watching updated files in the directory
 
 compass watch .
 python watch_haml.py .
+
+CHANGE WHEN USING IN PRODUCTION
+
+static to /static

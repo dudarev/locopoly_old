@@ -1,18 +1,102 @@
+$land-color: #F2EFE9
+$sea-color: #99B3CC
+
+$blueprint-grid-columns: 24
+$blueprint-container-size: 950px
+$blueprint-grid-margin: 10px
+
 @import compass/reset.scss
 @import compass/layout.scss
-@import compass/layout/sticky-footer
+@import compass/utilities/links/link-colors
+@import compass/utilities/lists/horizontal-list
 
-+sticky-footer(72px, "#layout", "#layout_footer", "#footer")
+@import blueprint
+@import blueprint/scaffolding
+@import blueprint/interaction
+
+@include blueprint
+@include blueprint-scaffolding
+
+body
+  font-family: Arial, helvetica, sans-serif
 
 #header
-  :background #999
-  :height 72px
+  :background $sea-color
+  :border-bottom 3px solid $land-color
+  margin-bottom: 2.8em
+
+a.header-link
+  +link-colors($land-color, $land-color, $land-color, $land-color, $land-color)
+  cursor: pointer
+  text-decoration: none
+  
+a.header-link:hover
+  text-decoration: underline
+
 
 #footer
-  :background #ccc
+  :border-top 3px solid $land-color
+  padding-top: 1em
+  height: 10em
+  margin-top: 2.8em
 
-.example
-  border: 3px solid red
-  
+ul.footer
+  +horizontal-list
+
+li.extra-margin
+  margin-right: 2em
+
+h1
+  font-family: "Myriad Pro", arial, sans-serif
+  color: $land-color
+  font-size: 2.8em
+  font-weight: bold
+  padding-bottom: 0px
+  margin-bottom: 0.5em
+  margin-top: 0.5em 
+
+.two-col
+  +container
+
+#content
+  +container
+  #map-container
+    +column(12)
+    #map-canvas
+      width: 450px
+      height: 450px
+  #sidebar
+    background: $land-color
+    +column(12, true)
+
+$pad: 1.5em
+
+#text-holder
+  padding: $pad $pad 0 $pad
+
   p
-    margin: 1em 0.5em
+    margin: 0 0 1em 0
+
+.text-center
+  text-align: center
+
+.emph
+  font-size: 2em
+
+.bold
+  font-weight: bold
+
+.italic
+  font-style: italic
+
+#success-message
+  +success
+  display: none
+
+#progress-message
+  +notice
+  display: none
+
+#error-message
+  +error
+  display: none
