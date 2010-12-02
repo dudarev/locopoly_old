@@ -1418,36 +1418,36 @@ h1 {
   overflow-x: hidden;
 }
 
-/* line 74, ../../src/screen.sass */
+/* line 75, ../../src/screen.sass */
 #text-holder {
-  padding: 1.5em 1.5em 0 1.5em;
+  padding: 1.5em 1.5em 0.5em 1.5em;
 }
-/* line 77, ../../src/screen.sass */
+/* line 78, ../../src/screen.sass */
 #text-holder p {
   margin: 0 0 1em 0;
 }
 
-/* line 80, ../../src/screen.sass */
+/* line 81, ../../src/screen.sass */
 .text-center {
   text-align: center;
 }
 
-/* line 83, ../../src/screen.sass */
+/* line 84, ../../src/screen.sass */
 .emph {
   font-size: 2em;
 }
 
-/* line 86, ../../src/screen.sass */
+/* line 87, ../../src/screen.sass */
 .bold {
   font-weight: bold;
 }
 
-/* line 89, ../../src/screen.sass */
+/* line 90, ../../src/screen.sass */
 .italic {
   font-style: italic;
 }
 
-/* line 92, ../../src/screen.sass */
+/* line 93, ../../src/screen.sass */
 #success-message {
   padding: 0.8em;
   margin-bottom: 1em;
@@ -1462,7 +1462,7 @@ h1 {
   color: #264409;
 }
 
-/* line 96, ../../src/screen.sass */
+/* line 97, ../../src/screen.sass */
 #progress-message {
   padding: 0.8em;
   margin-bottom: 1em;
@@ -1477,7 +1477,7 @@ h1 {
   color: #514721;
 }
 
-/* line 100, ../../src/screen.sass */
+/* line 101, ../../src/screen.sass */
 #error-message {
   padding: 0.8em;
   margin-bottom: 1em;
