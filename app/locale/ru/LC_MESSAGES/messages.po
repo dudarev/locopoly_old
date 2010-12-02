@@ -3,13 +3,12 @@
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2010-11-17 00:17+0200\n"
-"PO-Revision-Date: 2010-11-17 00:49+0200\n"
+"PO-Revision-Date: 2010-12-01 19:13+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ru <LL@li.org>\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
@@ -24,8 +23,7 @@ msgstr ""
 msgid "This field is required."
 msgstr "Это поле обязательно."
 
-#: app/templates/login.html:14 app/templates/locopoly/index.html:16
-#: app/apps/multi-auth/templates/login.html:14
+#: app/templates/login.html:14 app/apps/multi-auth/templates/login.html:14
 msgid "Sign in"
 msgstr "Войти"
 
@@ -38,23 +36,68 @@ msgstr "Зарегистрироваться"
 msgid "Save"
 msgstr "Записать"
 
-#: app/templates/locopoly/index.html:4
+#: app/templates/locopoly/about.html:8
+msgid "About Locopoly"
+msgstr "О Локополии"
+
+#: app/templates/locopoly/about.html:28 app/templates/locopoly/header.html:4
+#: app/templates/locopoly/index.html:13 app/templates/locopoly/index_old.html:6
+#: app/templates/locopoly/index_old.html:17
 msgid "Locopoly"
 msgstr "Локополия"
 
-#: app/templates/locopoly/index.html:9
-msgid "Locopoly - main page"
-msgstr "Локополия - главная страница"
+#: app/templates/locopoly/about.html:29
+msgid ""
+" is a game that helps to systematize, liberate and discover information "
+"about places."
+msgstr ""
+" — это игра, которая помогает систематизировать и открывать информацию о местах."
 
-#: app/templates/locopoly/index.html:13
-msgid "Signed in as "
-msgstr "Зашли как "
+#: app/templates/locopoly/footer.html:5
+msgid "About"
+msgstr "О Локополии"
 
-#: app/templates/locopoly/index.html:14
+#: app/templates/locopoly/footer.html:18
 msgid "Sign out"
 msgstr "Выйти"
 
-#: app/templates/locopoly/index.html:16
-msgid "Hi, there."
-msgstr "Привет."
+#: app/templates/locopoly/index.html:34
+msgid "Hello"
+msgstr "Привет"
+
+#: app/templates/locopoly/index.html:38
+msgid "Spread the word by tweeting:"
+msgstr "Расскажи о Локополии через Твиттер:"
+
+#: app/templates/locopoly/index.html:41
+msgid "I want to play http://www.locopoly.com"
+msgstr "Хочу играть в http://www.locopoly.com"
+
+#: app/templates/locopoly/index.html:45
+msgid "Tweet"
+msgstr "Послать"
+
+#: app/templates/locopoly/index.html:49
+msgid "Tweeting..."
+msgstr "Посылаю..."
+
+#: app/templates/locopoly/index.html:52
+msgid "Success! Thanks for tweeting."
+msgstr "Успех! Спасибо за твит."
+
+#: app/templates/locopoly/index.html:55
+msgid "Error while tweeting."
+msgstr "Ошибка."
+
+#: app/templates/locopoly/index.html:61
+msgid "Hello! Locopoly is under construction."
+msgstr "Привет! Локополия — в стадии разработки."
+
+#: app/templates/locopoly/index.html:65 app/templates/locopoly/index.html:68
+msgid "Sign up with Twitter"
+msgstr "Войти при помощи Твиттера"
+
+#: app/templates/locopoly/index.html:66 app/templates/locopoly/index.html:69
+msgid "to join the waiting list."
+msgstr "чтобы присоединиться к списку игроков."
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2010-11-17 00:17+0200\n"
+"POT-Creation-Date: 2010-12-01 19:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,8 +22,7 @@ msgstr ""
 msgid "This field is required."
 msgstr ""
 
-#: app/templates/login.html:14 app/templates/locopoly/index.html:16
-#: app/apps/multi-auth/templates/login.html:14
+#: app/templates/login.html:14 app/apps/multi-auth/templates/login.html:14
 msgid "Sign in"
 msgstr ""
 
@@ -36,23 +35,67 @@ msgstr ""
 msgid "Save"
 msgstr ""
 
-#: app/templates/locopoly/index.html:4
+#: app/templates/locopoly/about.html:8
+msgid "About Locopoly"
+msgstr ""
+
+#: app/templates/locopoly/about.html:28 app/templates/locopoly/header.html:4
+#: app/templates/locopoly/index.html:13 app/templates/locopoly/index_old.html:6
+#: app/templates/locopoly/index_old.html:17
 msgid "Locopoly"
 msgstr ""
 
-#: app/templates/locopoly/index.html:9
-msgid "Locopoly - main page"
+#: app/templates/locopoly/about.html:29
+msgid ""
+" is a game that helps to systematize, liberate and discover information "
+"about places."
 msgstr ""
 
-#: app/templates/locopoly/index.html:13
-msgid "Signed in as "
+#: app/templates/locopoly/footer.html:5
+msgid "About"
 msgstr ""
 
-#: app/templates/locopoly/index.html:14
+#: app/templates/locopoly/footer.html:18
 msgid "Sign out"
 msgstr ""
 
-#: app/templates/locopoly/index.html:16
-msgid "Hi, there."
+#: app/templates/locopoly/index.html:34
+msgid "Hello"
+msgstr ""
+
+#: app/templates/locopoly/index.html:38
+msgid "Spread the word by tweeting:"
+msgstr ""
+
+#: app/templates/locopoly/index.html:41
+msgid "I want to play http://www.locopoly.com"
+msgstr ""
+
+#: app/templates/locopoly/index.html:45
+msgid "Tweet"
+msgstr ""
+
+#: app/templates/locopoly/index.html:49
+msgid "Tweeting..."
+msgstr ""
+
+#: app/templates/locopoly/index.html:52
+msgid "Success! Thanks for tweeting."
+msgstr ""
+
+#: app/templates/locopoly/index.html:55
+msgid "Error while tweeting."
+msgstr ""
+
+#: app/templates/locopoly/index.html:61
+msgid "Hello! Locopoly is under construction."
+msgstr ""
+
+#: app/templates/locopoly/index.html:65 app/templates/locopoly/index.html:68
+msgid "Sign up with Twitter"
+msgstr ""
+
+#: app/templates/locopoly/index.html:66 app/templates/locopoly/index.html:69
+msgid "to join the waiting list."
 msgstr ""
 

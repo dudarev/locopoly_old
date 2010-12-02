@@ -1,0 +1,14 @@
+http://www.tipfy.org/wiki/guide/i18n/
+
+To update translation.
+
+Extract all translations.
+bin/pybabel extract -F ./babel.cfg -o ./app/locale/messages.pot ./app/templates/ ./app/apps
+
+Update translation.
+bin/pybabel update -l ru -d ./app/locale/ -i ./app/locale/messages.pot
+
+Compile.
+bin/pybabel compile -f -d ./app/locale
+
+RESTART INSTANCE
