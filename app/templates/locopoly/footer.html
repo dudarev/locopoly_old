@@ -1,0 +1,23 @@
+<div id='footer'>
+  <div class='container'>
+    <ul class='footer'>
+      <li class='extra-margin'>
+      <a href='/about' title='title'>{{_('About')}}</a>
+      </li>
+      <li>
+        Languages:
+      </li>
+      <li>
+        <a href='?lang=en' title='en'>English</a>
+      </li>
+      <li class='extra-margin'>
+        <a href='?lang=ru' title='ru'>Русский</a>
+      </li>
+      {% if current_user -%}
+      <li>
+      <a href="{{ logout_url }}">{{_('Sign out')}}</a>
+      </li>
+      {%- endif %} 
+    </ul>
+  </div>
+</div>

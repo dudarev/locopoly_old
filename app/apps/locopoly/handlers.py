@@ -41,3 +41,8 @@ class IndexHandler(RequestHandler, MultiAuthMixin, Jinja2Mixin,
 
     def get(self):
         return self.render_response('locopoly/index.html')
+
+class AboutHandler(IndexHandler):
+
+    def get(self):
+        return self.render_response('locopoly/about.html')
